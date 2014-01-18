@@ -3,30 +3,47 @@ layout: default
 title: Your New Jekyll Site
 ---
 
-<div id="home">
-  <h2>some header i dunno</h2>
+<div class="home">
+  <!-- This loops through the paginated posts -->
+  {% for post in paginator.posts %}
+    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+    <p class="meta">{{ post.date | date_to_string }} &middot; By {{post.author}}</p>
 
-  <p>some words about venmo???</p>
+    <div class="post">
+      {% assign excerpt = post.content | split: '<!-- more -->' | first %}
 
-  <h2>Recent Blog Posts</h2>
+      {% if excerpt != post.content %}
+        {{excerpt}}
+        <p><a href="{{post.url}}">Read more &rarr;</a></p>
+      {% else %}
+        {{post.content}}
+      {% endif %}
+    </div>
+  {% endfor %}
 
-  <p>hmmm</p>
+  {% if paginator.total_pages > 1 %}
+  <div class="pagination">
+    {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+    {% else %}
+      <span>&laquo; Prev</span>
+    {% endif %}
 
-  <h2>Venmo &lt;3 Open Source</h2>
+    {% for page in (1..paginator.total_pages) %}
+      {% if page == paginator.page %}
+        <strong>{{ page }}</strong>
+      {% elsif page == 1 %}
+        <a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+      {% else %}
+        <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+      {% endif %}
+    {% endfor %}
 
-  <p>
-    Venmo wouldn't be possible without the <a href="https://help.venmo.com/customer/portal/articles/1360456-open-source-attribution-page-for-venmo">open source projects</a> we use to help create it.
-  </p>
-
-  <h3>Our Projects</h3>
-  <p>
-    <ul class="projects">
-      {% for project in site.data.projects %}
-        <li><a href="{{project.url}}">{{project.name}}</a> - {{project.description}}</li>
-      {% endfor %}
-    </ul>
-  </p>
-
-  <h3>Our Contributions</h3>
-  <p><em>todo</em></p>
+    {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+    {% else %}
+      <span>Next &raquo;</span>
+    {% endif %}
+  </div>
+  {% endif %}
 </div>

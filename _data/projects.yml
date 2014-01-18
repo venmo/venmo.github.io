@@ -1,3 +1,6 @@
 - name: Example Project
   url: https://venmo.com
   description: "Venmo is a pretty cool website you guys"
+- name: VENExperimentsManager
+  url: https://github.com/venmo/VENExperimentsManager
+  description: An Objective-C library enabling easy implementation of feature experiments on iOS allowing users to opt in and out of experiments at will.

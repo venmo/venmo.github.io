@@ -1,7 +1,7 @@
 name: Engineering @ Venmo
 markdown: redcarpet
 pygments: true
-permalink: /blog/:categories/:year/:month/:day/:title.htm
+permalink: /blog/:categories/:year/:month/:day/:title
 
 paginate: 5
-paginate_path: "blog/page:num"
+paginate_path: "/page:num"

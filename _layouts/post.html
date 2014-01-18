@@ -1,9 +1,9 @@
 ---
 layout: default
 ---
-<h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
+<h2><a href="{{ post.url }}">{{ page.title }}</a></h2>
+<p class="meta">{{ page.date | date_to_string }} &middot; By {{page.author}}</p>
 
 <div class="post">
-{{ content }}
+  {{ post.content }}
 </div>
