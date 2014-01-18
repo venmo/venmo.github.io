@@ -4,10 +4,29 @@ title: Your New Jekyll Site
 ---
 
 <div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
+  <h2>some header i dunno</h2>
+
+  <p>some words about venmo???</p>
+
+  <h2>Recent Blog Posts</h2>
+
+  <p>hmmm</p>
+
+  <h2>Venmo &lt;3 Open Source</h2>
+
+  <p>
+    Venmo wouldn't be possible without the <a href="https://help.venmo.com/customer/portal/articles/1360456-open-source-attribution-page-for-venmo">open source projects</a> we use to help create it.
+  </p>
+
+  <h3>Our Projects</h3>
+  <p>
+    <ul class="projects">
+      {% for project in site.data.projects %}
+        <li><a href="{{project.url}}">{{project.name}}</a> - {{project.description}}</li>
+      {% endfor %}
+    </ul>
+  </p>
+
+  <h3>Our Contributions</h3>
+  <p><em>todo</em></p>
 </div>

@@ -1,0 +1,47 @@
+/* This is a stopgap file until Venmo bootstrap is built out */
+
+body {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+}
+
+/* Header/Nav */
+
+.logo {
+  height: 22px;
+}
+
+.title {
+  margin-bottom: 1em;
+}
+
+.title a {
+  color: #3D95CE;
+}
+
+h1.title {
+  font-size: 40px;
+  font-weight: 100;
+}
+
+h1.title a {
+  text-decoration: none;
+  color: #3d95ce;
+}
+
+h1.title a:hover {
+  color: #3d95ce;
+}
+
+/* Posts */
+
+.post {
+  letter-spacing: .02em;
+  font-size: 16px;
+  font-weight: 200;
+}
+
+.post p {
+  line-height: 1.6em;
+  margin: 20px 0;
+}

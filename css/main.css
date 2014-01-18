@@ -73,10 +73,6 @@ a:visited { color: #a0a; }
   margin-bottom: 2em;
 }
 
-.title a {
-  color: #a00;
-}
-
 .title a:hover {
   color: #000;
 }
