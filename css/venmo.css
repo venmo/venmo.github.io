@@ -8,6 +8,13 @@ body {
 .site {
   width: auto;
   max-width: 650px;
+  padding: 10px;
+}
+
+@media screen and (max-width: 450px) {
+  .site {
+    margin-top: 1em;
+  }
 }
 
 a, a:visited {
@@ -30,32 +37,26 @@ a:hover {
   margin-bottom: 2em;
 }
 
-.header a.extra {
-  margin-left: 0;
-  margin-right: 22px;
-}
+  .header a.extra {
+    margin-left: 0;
+    margin-right: 22px;
+  }
 
-.title {
-  margin-bottom: 0;
-}
+  .header h1.title {
+    margin-bottom: 0;
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 100;
+  }
 
-.title a {
-  color: #3D95CE;
-}
+    .header h1.title a {
+      text-decoration: none;
+      color: #3d95ce;
+    }
 
-h1.title {
-  font-size: 40px;
-  font-weight: 100;
-}
-
-h1.title a {
-  text-decoration: none;
-  color: #3d95ce;
-}
-
-h1.title a:hover {
-  color: #3d95ce;
-}
+    .header h1.title a:hover {
+      color: #3d95ce;
+    }
 
 /* Posts */
 
@@ -65,10 +66,10 @@ h1.title a:hover {
   font-weight: 200;
 }
 
-.post p {
-  line-height: 1.6em;
-  margin: 20px 0;
-}
+  .post p {
+    line-height: 1.6em;
+    margin: 20px 0;
+  }
 
 h2 {
   font-size: 1.17em;
