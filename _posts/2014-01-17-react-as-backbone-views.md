@@ -4,7 +4,9 @@ title: "Using React components as Backbone Views"
 author: Thomas Boyt
 ---
 
-At [Venmo](https://venmo.com/), we've begun rewriting and redesigning our front-end into clean, idiomatic Backbone code. Backbone is an unopinionated framework that provides structure to your code. However, its view layer is purposefully lacking, providing only a few basic lifecycle hooks. Unlike Ember components or Angular directives, it does not hook your data up to your views for you, and does little to enforce separation between your layers.
+*This post was originally published at [thomasboyt.com](http://thomasboyt.com).*
+
+At Venmo, we've begun rewriting and redesigning our front-end into clean, idiomatic Backbone code. Backbone is an unopinionated framework that provides structure to your code. However, its view layer is purposefully lacking, providing only a few basic lifecycle hooks. Unlike Ember components or Angular directives, it does not hook your data up to your views for you, and does little to enforce separation between your layers.
 
 While we've gotten surprisingly far using only vanilla Backbone views, we've begun exploring more advanced options for architecting our UI. My goal was to find something that could interface with Backbone views that gave me the data binding and scoping that I was used to from views in larger frameworks. Thankfully, my friend [Scott](https://scott.mn/) pointed me at React, and after a few hours of wrestling with it, I came away very impressed.
 

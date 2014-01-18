@@ -7,7 +7,7 @@ body {
 
 .site {
   width: auto;
-  max-width: 42em;
+  max-width: 650px;
 }
 
 a, a:visited {
@@ -26,8 +26,17 @@ a:hover {
   height: 22px;
 }
 
+.header {
+  margin-bottom: 2em;
+}
+
+.header a.extra {
+  margin-left: 0;
+  margin-right: 22px;
+}
+
 .title {
-  margin-bottom: 1em;
+  margin-bottom: 0;
 }
 
 .title a {
