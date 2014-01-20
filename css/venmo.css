@@ -9,6 +9,7 @@ body {
   width: auto;
   max-width: 650px;
   padding: 10px;
+  text-rendering: optimizeLegibility;
 }
 
 @media screen and (max-width: 450px) {
