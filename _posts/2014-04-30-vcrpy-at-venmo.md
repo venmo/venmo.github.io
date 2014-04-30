@@ -18,6 +18,8 @@ This slowed down builds and introduced flaky tests.
 While we occasionally mocked problematic interactions manually, this was error-prone and annoying for test authors.
 We needed an automatic solution -- something that would let us easily mock old and new tests.
 
+<!-- more -->
+
 
 There are a number of tools in this space.
 The most well known is Ruby’s [vcr](https://github.com/vcr/vcr), which works by recording http request/response pairs in “cassettes”.
