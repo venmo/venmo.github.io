@@ -72,6 +72,10 @@ a:hover {
     margin: 20px 0;
   }
 
+  .post ul, .post ol {
+    margin: 20px 0;
+  }
+
 h2 {
   font-size: 1.17em;
 }
