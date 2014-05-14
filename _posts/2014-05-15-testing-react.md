@@ -34,6 +34,8 @@ define(['./view'], function(View) {
 });
 ```
 
+
+
 ```javascript
 // React
 define(['./view'], function(View) {
