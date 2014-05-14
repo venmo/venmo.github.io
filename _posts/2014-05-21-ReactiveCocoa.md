@@ -144,8 +144,6 @@ First, let's try updating our imperative implementation from **(1a)**.
 ###(2a) Imperative
 
 ```objective-c
-// ...
-
 - (void)viewDidLoad {
 
     // ...
@@ -183,8 +181,6 @@ First, let's try updating our imperative implementation from **(1a)**.
     self.passwordTextField.textColor = self.passwordTextField.editing ?
         [UIColor orangeColor] : [UIColor blackColor];
 }
-
-// ...
 ```
 
 Dealing with state is messy in the imperative world. Our code has become rather difficult to understand — we update the submit button in three different places, `setPhoto:` has three side effects, and in general, things seem to be happening all over the place. Also, notice that modifying our imperative implementation required touching nearly everything we'd written in [1a]((1a) Imperative). Adding functionality usually means adding new events and states. In the imperative world, we have to respond to discrete events and state changes and make sure everything stays up to date, resulting in less linear, more tightly coupled code that's more difficult to understand and update.
@@ -194,8 +190,6 @@ Let's try updating our reactive implementation.
 ###(2b) Reactive
 
 ```objective-c
-//...
-
 - (void)viewDidLoad {
 
     // ...
@@ -230,8 +224,6 @@ Let's try updating our reactive implementation.
                             return @(photo && username.length > 0 && password.length > 0);
     }];
 }
-
-// ...
 ```
 
 Updating our reactive implementation hardly required any changes to what we wrote in [1b](#(1b) Reactive), and the resulting code is much more linear. Because state changes propagate automatically, we can define the flow of state rather than responding to discrete events. Even in this simple example, reactive programming has empowered us to write code that's easier to understand and maintain.
