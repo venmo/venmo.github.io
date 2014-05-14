@@ -12,7 +12,7 @@ At Venmo, we’ve started using [React](http://http://facebook.github.io/react) 
 
 As our client-side apps grew in size, maintaining and testing our Backbone views became a burden. React ships with `JSX`, Javascript XML Syntax Transform, which greatly reduces the amount of complexity that large views incur over time by providing a new way to construct your app’s markup. Backbone views rely on templating and selectors for inserting elements into the `DOM`, while React components are declarative.
 
-If your looking for more information on why you should consider replacing `Backbone.View` with React, check out [Clay Allsopp's](http://twitter.com/clayallsopp) awesome blog post- [From Backbone to React](https://usepropeller.com/blog/posts/from-backbone-to-react/).
+If you're looking for more information on why you should consider replacing `Backbone.View` with React, check out [Clay Allsopp's](http://twitter.com/clayallsopp) awesome blog post- [From Backbone to React](https://usepropeller.com/blog/posts/from-backbone-to-react/).
 
 Here’s an example of how both libraries approach constructing app markup.
 
