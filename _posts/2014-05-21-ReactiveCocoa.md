@@ -8,7 +8,7 @@ We've recently started using [ReactiveCocoa](https://github.com/ReactiveCocoa/Re
 
 We'll be working on a simple signup form that looks like this:
 
-![](/images/reactive_signup.png)
+<img src="/images/reactive_signup.png" width="300px"/>
 
 Let's start with the top of the form, where the user can add or change their profile photo.
 
