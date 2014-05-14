@@ -15,8 +15,8 @@ As our client-side apps grew in size, maintaining and testing our Backbone views
 If your looking for more information on why you should consider replacing `Backbone.View` with React, check out [Clay Allsopp's](http://twitter.com/clayallsopp) awesome blog post- [From Backbone to React](https://usepropeller.com/blog/posts/from-backbone-to-react/).
 
 Here’s an example of how both libraries approach constructing app markup.
-```javascript
 
+```javascript
 // Backbone
 define(['./view'], function(View) {
 
@@ -33,6 +33,7 @@ define(['./view'], function(View) {
   
 });
 ```
+
 ```javascript
 // React
 define(['./view'], function(View) {
