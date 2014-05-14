@@ -145,8 +145,11 @@ First, let's try updating our imperative implementation from **(1a)**.
 
 ```objective-c
 // ...
+
 - (void)viewDidLoad {
+
     // ...
+
     [self.usernameTextField addTarget:self action:@selector(textFieldDidChange:)
         forControlEvents:UIControlEventEditingDidBegin | UIControlEventEditingChanged | UIControlEventEditingDidEnd];
     [self.passwordTextField addTarget:self action:@selector(textFieldDidChange:)
@@ -155,7 +158,9 @@ First, let's try updating our imperative implementation from **(1a)**.
 }
 
 - (void)setPhoto:(UIImage *)photo {
+
     // ...
+
     [self updateSubmitButton];
 }
 
@@ -178,6 +183,7 @@ First, let's try updating our imperative implementation from **(1a)**.
     self.passwordTextField.textColor = self.passwordTextField.editing ?
         [UIColor orangeColor] : [UIColor blackColor];
 }
+
 // ...
 ```
 
@@ -191,7 +197,9 @@ Let's try updating our reactive implementation.
 //...
 
 - (void)viewDidLoad {
+
     // ...
+
     [self configureTextFields];
     [self configureSubmitButton];
 }
