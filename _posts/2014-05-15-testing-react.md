@@ -16,7 +16,7 @@ If your looking for more information on why you should consider replacing `Backb
 
 Here’s an example of how both libraries approach constructing app markup.
 
-```javascript
+{% highlight js %}
 // Backbone
 define(['./view'], function(View) {
 
@@ -32,11 +32,9 @@ define(['./view'], function(View) {
   });
   
 });
-```
+{% endhighlight %}
 
-
-
-```javascript
+{% highlight js %}
 // React
 define(['./view'], function(View) {
 
@@ -54,7 +52,7 @@ define(['./view'], function(View) {
 
   return ReactComponent;
 });
-```
+{% endhighlight %}
 
 At first glance, the difference may seem trivial. But over time your views will gain complexity and a simple Backbone view like the one above may end up manually populating several containers, each with its own markup. The React approach is much easier to reason about and moves the concerns of markup construction into the `JSX` block.
 
@@ -63,17 +61,17 @@ At first glance, the difference may seem trivial. But over time your views will 
 ## Testing
 
 Why does this point matter? Well, a test that would have looked like this:
-```javascript
+{% highlight js %}
 it('renders 3 comments', function() {
   var comments = new CommentsCollection(commentFixtures);
   var commentList = new CommentsListView({ collection: comments }).render();
 
   expect(commentList.$('.comment').length).to.be(3);
 });
-```
+{% endhighlight %}
 
 Now looks like this:
-```javascript
+{% highlight js %}
 var TU = React.addons.TestUtils;
 
 it('renders 3 comments', function() {
@@ -84,12 +82,12 @@ it('renders 3 comments', function() {
   var commentList = TU.scryRenderedDOMComponentWithType(commentList, CommentComponent);
   expect(commentList.length).to.be(3);
 });
-```
+{% endhighlight %}
 
 Testing with React allows your tests to be markup agnostic. This means that React is only concerned with whether or not three instances of `CommentComponent` exist rather than their markup. The example test written in React is much less brittle because it does not rely on the class name `.comment`. Thus, if someone were to swoop through the codebase and change a bunch of class names and `DOM` structure, your tests would still make all the proper assertions. This is a massive step towards building a rock-solid app and test suite.
 
 Here’s another example:
-```javascript
+{% highlight js %}
 var TU = React.addons.TestUtils;
 
 it('renders a FooForm', function() {
@@ -100,7 +98,7 @@ it('renders a FooForm', function() {
   expect(TU.findRenderedComponentWithType).withArgs(app, FooForm)
       .to.throwException();
 });
-```
+{% endhighlight %}
 This test is amazing. It simply asserts that our `App` component contains a `FooForm` component. We don’t care about how `FooForm` behaves or what it contains (that’s what `spec_foo_form.js` is for); we simply care about its existence.
 
 ## Conclusion
