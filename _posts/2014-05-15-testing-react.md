@@ -16,6 +16,7 @@ If your looking for more information on why you should consider replacing `Backb
 
 Here’s an example of how both libraries approach constructing app markup.
 ```javascript
+
 // Backbone
 define(['./view'], function(View) {
 
