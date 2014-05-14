@@ -139,7 +139,7 @@ To finish our form, we'll need a username field, a password field, and a submit 
 /// ...
 ```
 
-First, let's try updating our imperative implementation from **(1a)**.
+First, let's try updating our imperative implementation from [(1a)](#1a-imperative).
 
 ###(2a) Imperative
 
@@ -183,7 +183,7 @@ First, let's try updating our imperative implementation from **(1a)**.
 }
 ```
 
-Dealing with state is messy in the imperative world. Our code has become rather difficult to understand — we update the submit button in three different places, `setPhoto:` has three side effects, and in general, things seem to be happening all over the place. Also, notice that modifying our imperative implementation required touching nearly everything we'd written in [1a](#1a-imperative). Adding functionality usually means adding new events and states. In the imperative world, we have to respond to discrete events and state changes and make sure everything stays up to date, resulting in less linear, more tightly coupled code that's more difficult to understand and update.
+Dealing with state is messy in the imperative world. Our code has become rather difficult to understand — we update the submit button in three different places, `setPhoto:` has three side effects, and in general, things seem to be happening all over the place. Also, notice that modifying our imperative implementation required touching nearly everything we'd written in [(1a)](#1a-imperative). Adding functionality usually means adding new events and states. In the imperative world, we have to respond to discrete events and state changes and make sure everything stays up to date, resulting in less linear, more tightly coupled code that's more difficult to understand and update.
 
 Let's try updating our reactive implementation.
 
@@ -226,7 +226,7 @@ Let's try updating our reactive implementation.
 }
 ```
 
-Updating our reactive implementation hardly required any changes to what we wrote in [1b](#1b-reactive), and the resulting code is much more linear. Because state changes propagate automatically, we can define the flow of state rather than responding to discrete events. Even in this simple example, reactive programming has empowered us to write code that's easier to understand and maintain.
+Updating our reactive implementation hardly required any changes to what we wrote in [(1b)](#1b-reactive), and the resulting code is much more linear. Because state changes propagate automatically, we can define the flow of state rather than responding to discrete events. Even in this simple example, reactive programming has empowered us to write code that's easier to understand and maintain.
 
 We've only scratched the surface of ReactiveCocoa, but hopefully we've given you a more concrete sense of the power of reactive programming. So go forth, compose signals, minimize state, and put away that spaghetti — let's make lasagna ;)
 
