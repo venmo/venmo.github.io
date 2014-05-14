@@ -32,9 +32,7 @@ define(['./view'], function(View) {
   });
   
 });
-{% endhighlight %}
 
-{% highlight js %}
 // React
 define(['./view'], function(View) {
 
