@@ -1,6 +1,8 @@
-------
-Blissful UI programming with ReactiveCocoa
-------
+---
+layout: post
+title: "Blissful UI programming with ReactiveCocoa"
+author: Ben Guo
+---
 
 We've recently started using [ReactiveCocoa](https://github.com/ReactiveCocoa/ReactiveCocoa) in the Venmo iOS app, and we've found that it provides an expressive, unified alternative to patterns like callback blocks, delegate methods, target-action, notifications, and KVO. If you haven't heard of ReactiveCocoa or Functional Reactive Programming (FRP), we recommend starting with [this awesome post by Josh Abernathy](http://blog.maybeapps.com/post/42894317939/input-and-output#fn:p42894317939-3) and [the official introduction](https://github.com/ReactiveCocoa/ReactiveCocoa#introduction). In this post, we'll walk through implementing a simple reactive user interface, with and without ReactiveCocoa. Hopefully, we'll inspire you to start experimenting with FRP on your own!
 
@@ -12,19 +14,19 @@ We'll be working on a simple signup form that looks like this:
 
 Let's start with the top of the form, where the user can add or change their profile photo.
 
-```objective-c
+{% highlight objc %}
 //  SignupViewController.h
 // ...
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @property (weak, nonatomic) IBOutlet UIButton *photoButton;
 // ...
-```
+{% endhighlight %}
 
 The `photoButton`'s text should be either "Add photo" or "Change photo", depending on whether or not a photo has been added, and the `imageView`'s image should be the currently chosen photo. Here's a reasonable imperative implementation:
 
 ###(1a) Imperative
 
-```objective-C
+{% highlight objc %}
 //  SignupViewController.m
 
 #import "SignupViewController.h"
@@ -63,13 +65,13 @@ The `photoButton`'s text should be either "Add photo" or "Change photo", dependi
 }
 
 @end
-```
+{% endhighlight %}
 
 Imperative programming involves describing _how_ to do something. Reactive programming, on the other hand, involves  describing  _what_ something is, using streams of values. Here's an equivalent implementation, with ReactiveCocoa.
 
 ###(1b) Reactive
 
-```objective-c
+{% highlight objc %}
 //  SignupViewController.m
 
 #import "SignupViewController.h"
@@ -122,7 +124,7 @@ Imperative programming involves describing _how_ to do something. Reactive progr
 }
 
 @end
-```
+{% endhighlight %}
 
 Our reactive code is more linear than our imperative code, but also arguably more difficult to parse. It's hard to see the value of reactive programming at this level of complexity, but as we add more functionality, we'll begin to see the benefits of choosing ReactiveCocoa.
 
@@ -130,20 +132,20 @@ Our reactive code is more linear than our imperative code, but also arguably mor
 
 To finish our form, we'll need a username field, a password field, and a submit button. The submit button should only be enabled when we've added a photo and entered a username and password. For some extra reactivity, let's make each text field's text turn orange while editing.
 
-```objective-c
+{% highlight objc %}
 //  SignupViewController.h
 // ...
 @property (weak, nonatomic) IBOutlet UITextField *usernameTextField;
 @property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
 @property (weak, nonatomic) IBOutlet UIButton *submitButton;
 /// ...
-```
+{% endhighlight %}
 
 First, let's try updating our imperative implementation from [(1a)](#1a-imperative).
 
 ###(2a) Imperative
 
-```objective-c
+{% highlight objc %}
 - (void)viewDidLoad {
 
     // ...
@@ -181,7 +183,7 @@ First, let's try updating our imperative implementation from [(1a)](#1a-imperati
     self.passwordTextField.textColor = self.passwordTextField.editing ?
         [UIColor orangeColor] : [UIColor blackColor];
 }
-```
+{% endhighlight %}
 
 Dealing with state is messy in the imperative world. Our code has become rather difficult to understand — we update the submit button in three different places, `setPhoto:` has three side effects, and in general, things seem to be happening all over the place. Also, notice that modifying our imperative implementation required touching nearly everything we'd written in [(1a)](#1a-imperative). Adding functionality usually means adding new events and states. In the imperative world, we have to respond to discrete events and state changes and make sure everything stays up to date, resulting in less linear, more tightly coupled code that's more difficult to understand and update.
 
@@ -189,7 +191,7 @@ Let's try updating our reactive implementation.
 
 ###(2b) Reactive
 
-```objective-c
+{% highlight objc %}
 - (void)viewDidLoad {
 
     // ...
@@ -224,7 +226,7 @@ Let's try updating our reactive implementation.
                             return @(photo && username.length > 0 && password.length > 0);
     }];
 }
-```
+{% endhighlight %}
 
 Updating our reactive implementation hardly required any changes to what we wrote in [(1b)](#1b-reactive), and the resulting code is much more linear. Because state changes propagate automatically, we can define the flow of state rather than responding to discrete events. Even in this simple example, reactive programming has empowered us to write code that's easier to understand and maintain.
 
