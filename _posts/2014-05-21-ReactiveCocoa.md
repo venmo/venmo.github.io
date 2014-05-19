@@ -234,4 +234,4 @@ Updating our reactive implementation hardly required any changes to what we wrot
 
 We've only scratched the surface of ReactiveCocoa, but hopefully we've given you a more concrete sense of the power of reactive programming. So go forth, compose signals, minimize state, and put away that spaghetti — let's make lasagna ;)
 
-If you're interested, you can check out the complete signup form [here](https://github.com/benzguo/ReactiveSignup).
+If you're interested, you can check out the complete example project [here](https://github.com/benzguo/ReactiveSignup).
