@@ -95,10 +95,7 @@ Imperative programming involves describing _how_ to do something. Reactive progr
 }
 
 - (void)configureImageView {
-    RAC(self.imageView, image) = 
-    [RACObserve(self, photo) map:^UIImage *(UIImage *image) {
-        return image;
-    }];
+    RAC(self.imageView, image) = RACObserve(self, photo);
 }
 
 - (void)configurePhotoButton {
