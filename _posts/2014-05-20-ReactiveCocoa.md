@@ -4,7 +4,7 @@ title: "Blissful UI programming with ReactiveCocoa"
 author: Ben Guo
 ---
 
-We've recently started using [ReactiveCocoa](https://github.com/ReactiveCocoa/ReactiveCocoa) in the Venmo iOS app, and we've found that it provides an expressive, unified alternative to patterns like callback blocks, delegate methods, target-action, notifications, and KVO. If you haven't heard of ReactiveCocoa or Functional Reactive Programming (FRP), we recommend starting with [this awesome post by Josh Abernathy](http://blog.maybeapps.com/post/42894317939/input-and-output#fn:p42894317939-3) and [the official introduction](https://github.com/ReactiveCocoa/ReactiveCocoa#introduction). In this post, we'll walk through implementing a simple reactive user interface, with and without ReactiveCocoa. Hopefully, we'll inspire you to start experimenting with FRP on your own!
+We've recently started using [ReactiveCocoa](https://github.com/ReactiveCocoa/ReactiveCocoa) in the Venmo iOS app, and we've found that it provides an expressive, unified alternative to patterns like callback blocks, delegate methods, target-action, notifications, and KVO. If you haven't heard of ReactiveCocoa or Functional Reactive Programming (FRP), we recommend starting with [this awesome post by Josh Abernathy](http://blog.maybeapps.com/post/42894317939/input-and-output) and [the official introduction](https://github.com/ReactiveCocoa/ReactiveCocoa#introduction). In this post, we'll walk through implementing a simple reactive user interface, with and without ReactiveCocoa. Hopefully, we'll inspire you to start experimenting with FRP on your own!
 
 We'll be working on a simple signup form that looks like this:
 
@@ -90,21 +90,20 @@ Imperative programming involves describing _how_ to do something. Reactive progr
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.photoSignal = RACObserve(self, photo);
     [self configureImageView];
     [self configurePhotoButton];
 }
 
 - (void)configureImageView {
     RAC(self.imageView, image) = 
-    [self.photoSignal map:^UIImage *(UIImage *image) {
+    [RACObserve(self, photo) map:^UIImage *(UIImage *image) {
         return image;
     }];
 }
 
 - (void)configurePhotoButton {
     @weakify(self);
-    [self.photoSignal subscribeNext:^(UIImage *image) {
+    [RACObserve(self, photo) subscribeNext:^(UIImage *image) {
         @strongify(self);
         if (image) {
             [self.photoButton setTitle:@"Change photo" 
