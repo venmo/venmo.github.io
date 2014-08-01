@@ -28,6 +28,7 @@ obj.foo();
 In the example above, `bind` allows the function inside of `foo`'s outer function to have access to this.name. If we did not `bind` then `this.name` would return `undefined`. And it would do so because `this` now refers to the global object. No good if we want to be able to work with the same `this` in a nested function.
 
 So what is going on behind the scenes with `bind`? What's this sneaky guy doing? Well, `bind` returns a function with new or added context, optionally adding any additional supplied parameters to the beginning of the arguments collection. Let's take a look at a rewrite below.
+
 {% highlight javascript %}
 function bind(fn, context, args) {
   var argsArr = slice(args, 2);
@@ -49,6 +50,7 @@ So, line-by-line, let's go through it:
 This is essentially how bind returns a function that will execute in a given context.
 
 To really hammer it home, let's take a look at an instance where we do *not* use `bind`:
+
 {% highlight javascript %}
 $('.gist-author img').click(function() { // my avatar image on gist.github.com :-P
   console.log(this);
@@ -62,6 +64,7 @@ $('.gist-author img').click(function() { // my avatar image on gist.github.com :
 // inside
 // Window {top: Window, window: Window, location: Location, external: Object, chrome: Object…}
 {% endhighlight %}
+
 Yikes. If we want to perform a function on the original `this` -- in this case, `img` -- we can't. Inside the inner function, `this` refers to the `window` because `this` defaults to `window` when inside a jQuery function. This is the problem that `bind` tries to solve: to allow us to be specific with our context.
 
 Awesome. I hope that's helpful. It certainly helps us at Venmo.
