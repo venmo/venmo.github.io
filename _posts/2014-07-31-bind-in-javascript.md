@@ -30,22 +30,22 @@ In the example above, `bind` allows the function inside of `foo`'s outer functio
 So what is going on behind the scenes with `bind`? What's this sneaky guy doing? Well, `bind` returns a function with new or added context, optionally adding any additional supplied parameters to the beginning of the arguments collection. Let's take a look at a rewrite below.
 
 {% highlight javascript %}
-function bind(fn, context, args) {
-  var argsArr = slice(args, 2);
+Function.prototype.bind = function(ctx) {
+  var fn = this;
+  var args = arguments.slice(1);
+
   return function() {
-    return fn.apply(context, argsArr.concat(slice(arguments)));
+    return fn.apply(ctx, args.concat(arguments));
   };
-}
+};
 {% endhighlight %}
 
-So, line-by-line, let's go through it:
+So, let's go through it:
 
-1. Bind takes a function (`fn`), a `context`, and some arguments (`args`).
-2. `argsArr` takes just the arguments of that function by removing the funciton and the context (because those aren't arguments).
-3. Next it returns the `fn` that was passed in,
-4. with the given `context` specified in the bind call, and any given arguments.
-5. The end of the function.
-6. The end of the other function.
+1. Bind takes a context (`ctx`).
+2. The function on which `bind` will be called is `this`
+3. The arguments (`args`) passed into the function include everything but the first argument, `ctx`
+4. `bind` returns a new function that applies `ctx` and `args` to the original `fn`
 
 This is essentially how bind returns a function that will execute in a given context.
 
