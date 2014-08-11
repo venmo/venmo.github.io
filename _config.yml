@@ -1,6 +1,6 @@
 name: Engineering @ Venmo
 markdown: redcarpet
-pygments: true
+highlighter: pygments
 permalink: /blog/:categories/:year/:month/:day/:title
 
 paginate: 5
