@@ -1,5 +1,8 @@
-Building a Sample App with the Android App Switch SDK
-================================================
+---
+layout: post
+title:  "Building a Sample App with the Android App Switch SDK"
+author: Matthew Gotteiner
+---
 
 The Venmo Android App Switch SDK enables anyone to easily add person-to-person payments to an app. After adding the required sample files to your project, all that's left is to add a few input fields and fire off a request. To demonstrate how simple it is to integrate the App Switch SDK, let's walk through a sample app that allows a user to send a Venmo payment to a contact by searching for a name or phone number. Integrating contacts into your app is not a requirement to use our SDK, but it is a common use case so I decided to go over that process here. Download the source code for the complete app here: https://github.com/mgottein/app-switch-demo
 
@@ -32,6 +35,7 @@ This generates a SQLite query that will look something like this:
 SELECT <projection> FROM <uri> WHERE <selection> ORDER BY <sortOrder>
 ```
 
+
 Making the Projection Statement
 -------------------------------
 
@@ -46,6 +50,7 @@ private static final String[] PROJECTION = new String[]{
     Phone.NUMBER
 };
 ```
+
 
 Making the SQLite Selection Statement
 -------------------------------------
@@ -67,6 +72,7 @@ Phone.TYPE + "='" + Phone.TYPE_MOBILE + "' AND " +
 ```Java
 Data.MIMETYPE + "='" + Phone.CONTENT_ITEM_TYPE + "'";
 ```
+
 
 Instantiating the Adapter
 -------------------------
