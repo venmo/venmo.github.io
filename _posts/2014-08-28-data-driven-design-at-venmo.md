@@ -10,7 +10,7 @@ We recently started using Looker at Venmo, and this has made it much easier for 
 
 The engineering team’s first use of Looker occurred during a recent app release and design change.
 
-Up until recently, the compose screen on the venmo iOS app had the design seen below. A user would enter her friend’s name, payment amount, and payment description, and then would select whether she wanted to pay or charge.
+Up until recently, the compose screen on the Venmo iOS app had the design seen below. A user would enter her friend’s name, payment amount, and payment description, and then would select whether she wanted to pay or charge.
 
 Once the user selected pay or charge, they were taken to a confirmation screen to send payment or send charge. This binary option forced a user to choose and confirm their action.
 
@@ -38,7 +38,7 @@ The product team then reached out to the data team, to do deeper analysis into t
 
 ![pic](/images/looker/Image_6.png)
 
-We first looked at the percentage of charges that are mixups across payment mediums (iOS, android, and web). We found that when version 6.0 was released, the percentage of mistaken charges on iOS increased from less than .5% to over 6%, which suggested that the iOS v6.0 release was somehow to blame.
+We first looked at the percentage of charges that are mixups across payment mediums (iOS, Android, and web). We found that when version 6.0 was released, the percentage of mistaken charges on iOS increased from less than .5% to over 6%, which suggested that the iOS v6.0 release was somehow to blame.
 
 ![pic](/images/looker/Image_7.png)
 

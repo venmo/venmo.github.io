@@ -1,1 +1,5 @@
 _site
+
+# bundle stuff
+.bundle
+vendor
