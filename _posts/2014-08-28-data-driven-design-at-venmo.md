@@ -10,7 +10,7 @@ We recently started using Looker at Venmo, and this has made it much easier for 
 
 The engineering team’s first use of Looker occurred during a recent app release and design change.
 
-Up until recently, the compose screen on the venmo iOS app had the design seen below. A user would enter her friend's name, payment amount, and payment description, and then would select whether she wanted to pay or charge.
+Up until recently, the compose screen on the venmo iOS app had the design seen below. A user would enter her friend’s name, payment amount, and payment description, and then would select whether she wanted to pay or charge.
 
 Once the user selected pay or charge, they were taken to a confirmation screen to send payment or send charge.  This binary option forced a user to choose and confirm their action.
 
@@ -30,7 +30,7 @@ In the Venmo feed, we were also seeing that users were paying their friends, the
 
 ![pic](/images/looker/Image_4.png)
 
-The support team notified the product team to investigate the problem. It was clear some users were accidentally paying instead of charging, but it wasn't clear how widespread the problem was and whether it was worth prioritizing a fix.
+The support team notified the product team to investigate the problem. It was clear some users were accidentally paying instead of charging, but it wasn’t clear how widespread the problem was and whether it was worth prioritizing a fix.
 
 The product team then reached out to the data team, to do deeper analysis into the problem and see how many users were actually making the mistake.  Initially, the data team did not use Looker; whenever we were asked for data, we would write a custom script, print out a bunch of data to excel, do a bunch of manual calculations, and then repeat this process whenever the product team wanted to extend the timeframe.
 
@@ -60,4 +60,4 @@ As of August 8th, 43% of iOS users had upgraded to v6.2, and our support team ha
 
 Looker made this analysis much easier for the data, product, and engineering teams. Once the product and engineering teams sent the original data request, everything they needed was easily accessible in their customized Looker dashboard, giving them all the data they needed right at their fingertips.
 
-We're super excited to continue using Looker to help us make data-driven product decisions at Venmo!
+We’re super excited to continue using Looker to help us make data-driven product decisions at Venmo!
