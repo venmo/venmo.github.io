@@ -12,7 +12,7 @@ The engineering team’s first use of Looker occurred during a recent app releas
 
 Up until recently, the compose screen on the Venmo iOS app had the design seen below. A user would enter her friend’s name, payment amount, and payment description, and then would select whether she wanted to pay or charge.
 
-Once the user selected pay or charge, they were taken to a confirmation screen to send payment or send charge. This binary option forced a user to choose and confirm their action.
+Once the user selected pay or charge, a "Send Payment" or "Send Charge" confirmation button was presented. This binary option forced a user to choose and confirm their action.
 
 ![pic](/images/looker/Image_1.png)
 
