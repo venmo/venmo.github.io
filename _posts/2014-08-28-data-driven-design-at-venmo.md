@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Data Driven Design at Venmo"
-author: Annie Corbett
+author: Annie Corbett and JT Glaze
 ---
 
 Venmo’s engineers and designers are constantly tweaking and upgrading the Venmo app.  They are always working on new designs and new features to make paying friends more enjoyable, intuitive, and engaging. As our user base grows, so does the amount and variety of data we have access to, which we can use to inform how we improve the product.
