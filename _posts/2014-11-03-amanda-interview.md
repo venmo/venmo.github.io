@@ -28,3 +28,5 @@ I recently made the preliminary roster for the 2015 USDBF Team USA Premier Women
 
 ###*What advice do you have for aspiring developers?*
 My advice to aspiring developers is to prepare yourself on how to deal with failure. There will be many times where you will hit a proverbial wall in your learning process. Maybe it's a concept you just can't figure out, or your code won't compile. Life. Will. Suck. You have to be stubborn and believe that you can figure it out - it's just a matter of time. Step back, look at the bigger picture, reach out to others for advice, or try a completely new approach. You've got this.
+
+Got more questions? Email us at [blog@venmo.com](mailto:blog@venmo.com)!
