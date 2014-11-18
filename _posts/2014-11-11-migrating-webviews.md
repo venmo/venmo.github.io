@@ -17,11 +17,9 @@ Of course you would. All engineers are guilty of copying code every now and then
 
 Here's an example of how a Backbone Model anti-pattern got out of the tube:
 
-```js
-INSERT CODE EXAMPLE HERE
-```
+Backbone exposes a `get` method on its models. This method accesses an object on the model instance and returns the value if found, e.g., `model.get('foo')`. Unfortunately, it's also possible to access the attributes directly on the model like so `model.attributes.foo`. Invoking a `get` method is ideal because it allows for functionality to be tied into accessing model data. E.g., one may need to increment a counter every time a model attribute is accessed.
 
-Once anti-patterns are out of the tube they become increasingly difficult to subdue as their footprint greatens over time.
+The pattern of directly accessing the model attributes was used once and began organically propagating itself. Once anti-patterns are out of the tube they become increasingly difficult to subdue as their footprint greatens over time.
 
 #How to avoid needing to put toothpaste back in its tube
 Define and document a set of interactions for the code base:
