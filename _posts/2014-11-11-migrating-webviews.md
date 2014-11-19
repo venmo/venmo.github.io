@@ -7,6 +7,7 @@ author: Julian Connor
 For the last month, the web team has been diligently working on porting our webview code from one repository to another. Through this long and tedious process we've learned a lot about the code we used to write and the code we now write. The striking contrast reminds us that sustained piecemeal progress gives large code bases the opportunity to bloom.
 
 In this blog post, I will go through two valuable lessons we learned:
+
  - You can't put toothpaste back in the tube.
  - Do one thing at a time.
 
