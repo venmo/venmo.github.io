@@ -80,6 +80,10 @@ a:visited { color: #a0a; }
   color: #000;
 }
 
+.navigation {
+    text-align: center;
+}
+
 .meta {
   color: #aaa;
 }
