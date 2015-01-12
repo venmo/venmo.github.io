@@ -30,7 +30,7 @@ We open-source a lot of things at Venmo, and we also use a lot of open-source li
 * [Mantle](https://github.com/Mantle/Mantle) makes converting JSON reponses to and from objects a breeze.
 * [MCDateExtensions](https://github.com/mirego/MCDateExtensions) adds some nice additions to NSDate that make it a lot more manageable to do date computations, etc.
 * [MMDrawerController](https://github.com/mutualmobile/MMDrawerController) is really easy if you want add drawer navigation to your app. We’re looking to bid farewell to our hamburger button in the near future though.
-* [MZFormSheetController](https://github.com/m1entus/MZFormSheetController) brings iPad’s UIModalPresentationFormSheet and brings it to iPhone.
+* [MZFormSheetController](https://github.com/m1entus/MZFormSheetController) brings iPad’s UIModalPresentationFormSheet to iPhone.
 * [Mixpanel](https://github.com/mixpanel/mixpanel-iphone) has a really nice dashboard and handles all of our analytics.
 * [Nocilla](https://github.com/luisobo/Nocilla) is our favorite HTTP stubbing libary because it has such a simple and elegant API.
 * [NSURL+QueryDictionary](https://github.com/itsthejb/NSURL-QueryDictionary) makes it easy to convert URL query params to a dictionary and vice versa.
