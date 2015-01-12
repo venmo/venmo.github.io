@@ -42,7 +42,7 @@ We open-source a lot of things at Venmo, and we also use a lot of open-source li
 * [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) because all we can say is, “OH MY ZSHELL!”
 * [PSTAlertController](https://github.com/steipete/PSTAlertController) provides an API similar to iOS 8’s UIAlertController, and it’s backwards compatible with iOS 7.
 * [ReactiveCocoa](https://github.com/ReactiveCocoa/ReactiveCocoa) is a different way of thinking about architecture, and we like it. We’re moving more and more towards FRP.
-* [Specta](https://github.com/specta/specta) allows our specs to read like English. `it(@"should allow the user to log in", ^{ ... });` instead of `testUserShouldBeAbleToLogIn`. We think it’s a lot nicer thanReadingABunchOfCamelCasedSentences.
+* [Specta](https://github.com/specta/specta) allows our specs to read like English and have better structure. `it(@"should allow the user to log in", ^{ ... });` instead of `testUserShouldBeAbleToLogIn`. We think it’s a lot nicer thanReadingABunchOfCamelCasedSentences.
 * [SSKeychain](https://github.com/soffes/sskeychain) provides an elegant abstraction around Apple’s Keychain Services API.
 * [SVProgressHUD](https://github.com/TransitApp/SVProgressHUD) is basically every spinning progress loader in our app.
 * [TOWebViewController](https://github.com/TimOliver/TOWebViewController) is so nice for the few web views that we have in our app, although we’re slowly but surely moving away from them.
