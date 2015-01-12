@@ -125,7 +125,7 @@ a:visited { color: #a0a; }
 .post pre {
   border: 1px solid #ddd;
   background-color: #eef;
-  padding: 0 .4em;
+  padding: .4em;
   overflow: auto;
   font-size: 14px;
 }

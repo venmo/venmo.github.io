@@ -36,8 +36,7 @@ SELECT <projection> FROM <uri> WHERE <selection> ORDER BY <sortOrder>
 ```
 
 
-Making the Projection Statement
--------------------------------
+##Making the Projection Statement
 
 There are many columns in the Android `Contact` entity, but we only need a few of them here. We care about `Contacts.DISPLAY_NAME_PRIMARY`, `Phone.NUMBER`, and `Data._ID`.
 
@@ -52,8 +51,7 @@ private static final String[] PROJECTION = new String[]{
 ```
 
 
-Making the SQLite Selection Statement
--------------------------------------
+##Making the SQLite Selection Statement
 
 Building SQLite queries in Java can be confusing, so let's walk through this step-by-step. 
 - Check if either `Contact.DISPLAY_NAME_PRIMARY` or `Phone.NUMBER` start with the input text. Since the contact name and phone number are strings, we can use the `LIKE` operator to see if the input text matches. 
@@ -74,8 +72,7 @@ Data.MIMETYPE + "='" + Phone.CONTENT_ITEM_TYPE + "'";
 ```
 
 
-Instantiating the Adapter
--------------------------
+##Instantiating the Adapter
 
 In order to instantiate the adapter, we need to provide a valid `Context`, a layout resource for a single list item, and a mapping between columns and view IDs. This mapping allows the `SimpleCursorAdapter` to automatically display a list item for us with very little code. We can choose to provide a cursor at instantiation, but for our purposes this is unnecessary. We are using a pre-existing layout resource for simplicity.
 
