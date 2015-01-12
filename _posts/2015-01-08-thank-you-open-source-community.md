@@ -38,6 +38,7 @@ We open-source a lot of things at Venmo, and we also use a lot of open-source li
 * [NSURL+QueryDictionary](https://github.com/itsthejb/NSURL-QueryDictionary) makes it easy to convert URL query params to a dictionary and vice versa.
 * [ObjectiveSugar](https://github.com/supermarin/objectivesugar) is exactly as it sounds. Add some sugar to your Objective-C!
 * [OCMock](https://github.com/erikdoe/ocmock) because dependencies. Though with Swift and its focus on value types, we might be using fewer mocks!
+* [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) All we can say is, “OH MY ZSHELL!”
 * [PSTAlertController](https://github.com/steipete/PSTAlertController) provides an API similar to iOS 8’s UIAlertController, and it’s backwards compatible with iOS 7.
 * [ReactiveCocoa](https://github.com/ReactiveCocoa/ReactiveCocoa) is a different way of thinking about architecture, and we like it. We’re moving more and more towards FRP.
 * [Specta](https://github.com/specta/specta) allows our specs to read like English. `it(@"should allow the user to log in", ^{ ... });` instead of `testUserShouldBeAbleToLogIn`. We think it’s a lot nicer thanReadingABunchOfCamelCasedSentences.
