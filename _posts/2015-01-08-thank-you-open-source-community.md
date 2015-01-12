@@ -62,4 +62,4 @@ Since we use so many open-source libraries, we wanted to give a little back to t
 * [VENTokenField](https://github.com/venmo/VENTokenField) is the Messages.app style recipients field that we use in our payment and invite flows.
 * [VENTouchLock](https://github.com/venmo/VENTouchLock) is our Touch ID + pin code integration.
 * [VENVersionTracker](https://github.com/venmo/VENVersionTracker) is what we use to auto-update our dogfood versions. We’re looking to move to using HockeyApp’s equivalent though.
-* [Venmo-iOS-SDK](https://github.com/venmo/venmo-ios-sdk) let you build apps that integrate Venmo payments really easily.
+* [Venmo-iOS-SDK](https://github.com/venmo/venmo-ios-sdk) lets you build apps that integrate Venmo payments really easily.
