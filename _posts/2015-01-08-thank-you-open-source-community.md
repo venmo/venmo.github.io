@@ -14,7 +14,7 @@ We open-source a lot of things at Venmo, and we also use a lot of open-source li
 * [BlocksKit](https://github.com/zwaldowski/BlocksKit) because `dismissWithClickedButtonIndex:animated:` delegate methods are no fun at all. Besides, who “clicks” on an iOS device?
 * [Braintree](https://github.com/braintree/braintree_ios) allows our users to pay via Venmo on apps like [YPlan](https://yplanapp.com/).
 * [CMPopTipView](https://github.com/chrismiles/CMPopTipView) has been useful when we want to draw attention to a new feature that we added.
-* [CocoaPods](https://github.com/cocoapods/cocoapods) is how we manage all of our dependencies, including private pods. Can’t wait for it to support Swift.
+* [CocoaPods](https://github.com/cocoapods/cocoapods) is how we manage all of our dependencies, including private pods. Can’t wait for their 0.36 release which supports Swift!
 * [DAZABTest](https://github.com/dasmer/DAZABTest) provides a super simple API to do basic A/B tests.
 * [Expecta](https://github.com/specta/expecta) is a great matcher framework that makes your tests read like English. `expect(myTests).toNot.beEmpty()`
 * [FLEX](https://github.com/Flipboard/FLEX) is built into all of our debug and dogfood builds, and it makes finding and fixing UI bugs so much fun and so much easier.
