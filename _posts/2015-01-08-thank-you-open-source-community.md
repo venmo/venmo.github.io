@@ -9,7 +9,7 @@ We open-source a lot of things at Venmo, and we also use a lot of open-source li
 * [1PasswordExtension](https://github.com/AgileBits/onepassword-app-extension) adds 1Password support to our login. (Psssst... Look out for it in our next release. ;))
 * [AFNetworking](https://github.com/AFNetworking/AFNetworking) is great for all things networking, but we especially like `UIImageView+AFNetworking` for async image loading.
 * [Alcatraz](https://github.com/supermarin/Alcatraz) is the package manager that brings XVim, FuzzyAutocomplete, GitGutter, etc. to Xcode. Such a must have.
-* [BZGFormViewController](https://github.com/benzguo/BZGFormViewController) is great for simple forms that require validation. We use it in for in our sign up and edit profile views.
+* [BZGFormViewController](https://github.com/benzguo/BZGFormViewController) is great for simple forms that require validation. We use it in our app for our sign up and edit profile views.
 * [BZGMailgunEmailValidation](https://github.com/benzguo/BZGMailgunEmailValidation) is perfect if you use Mailgun for email validation.
 * [BlocksKit](https://github.com/zwaldowski/BlocksKit) because `dismissWithClickedButtonIndex:animated:` delegate methods are no fun at all. Besides, who “clicks” on an iOS device?
 * [Braintree](https://github.com/braintree/braintree_ios) allows our users to pay via Venmo on apps like [YPlan](https://yplanapp.com/).
@@ -26,7 +26,7 @@ We open-source a lot of things at Venmo, and we also use a lot of open-source li
 * [Godzippa](https://github.com/mattt/Godzippa) has been immensely helpful when uploading large amounts of data to our API.
 * [iRate](https://github.com/nicklockwood/iRate) because we love hearing back from our users. <3
 * [JTSImageViewController](https://github.com/jaredsinclair/JTSImageViewController) is what you see when you tap on a picture on a friend’s profile. We love the interaction where you can flick the image off the screen.
-* [KGStatusBar](https://github.com/kevingibbon/KGStatusBar) We use this to show “offline mode” in the status bar for Braintree merchants to test out Venmo integration. Super simple to use!
+* [KGStatusBar](https://github.com/kevingibbon/KGStatusBar) is used to show “offline mode” in the status bar for Braintree merchants to test out Venmo integration. Super simple to use!
 * [KIF](https://github.com/kif-framework/KIF) makes writing automated UI tests such a fun experience. It looks like magic!
 * [libextobjc](https://github.com/jspahrsummers/libextobjc) provides us with things like `@weakify` and `@strongify`, and one of our favorites is `EXTKeyPathCoding` which lets us avoid `@"stringlyTyped"`. For example, `[NSSortDescriptor sortDescriptorWithKey:@keypath([Story new], createdDate) ascending:NO]` which gets checked at compile time, as opposed to `[NSSortDescriptor sortDescriptorWithKey:@"createdDate" ascending:NO]` which is prone to typos and harder to refactor.
 * [Mantle](https://github.com/Mantle/Mantle) makes converting JSON reponses to and from objects a breeze.
@@ -38,7 +38,7 @@ We open-source a lot of things at Venmo, and we also use a lot of open-source li
 * [NSURL+QueryDictionary](https://github.com/itsthejb/NSURL-QueryDictionary) makes it easy to convert URL query params to a dictionary and vice versa.
 * [ObjectiveSugar](https://github.com/supermarin/objectivesugar) is exactly as it sounds. Add some sugar to your Objective-C!
 * [OCMock](https://github.com/erikdoe/ocmock) because dependencies. Though with Swift and its focus on value types, we might be using fewer mocks!
-* [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) All we can say is, “OH MY ZSHELL!”
+* [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) because all we can say is, “OH MY ZSHELL!”
 * [PSTAlertController](https://github.com/steipete/PSTAlertController) provides an API similar to iOS 8’s UIAlertController, and it’s backwards compatible with iOS 7.
 * [ReactiveCocoa](https://github.com/ReactiveCocoa/ReactiveCocoa) is a different way of thinking about architecture, and we like it. We’re moving more and more towards FRP.
 * [Specta](https://github.com/specta/specta) allows our specs to read like English. `it(@"should allow the user to log in", ^{ ... });` instead of `testUserShouldBeAbleToLogIn`. We think it’s a lot nicer thanReadingABunchOfCamelCasedSentences.
