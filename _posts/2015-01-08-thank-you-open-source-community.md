@@ -18,7 +18,7 @@ We open-source a lot of things at Venmo, and we also use a lot of open-source li
 * [DAZABTest](https://github.com/dasmer/DAZABTest) provides a super simple API to do basic A/B tests.
 * [Expecta](https://github.com/specta/expecta) is a great matcher framework that makes your tests read like English. `expect(myTests).toNot.beEmpty()`
 * [FLEX](https://github.com/Flipboard/FLEX) is built into all of our debug and dogfood builds, and it makes finding and fixing UI bugs so much fun and so much easier.
-* [FuzzyAutocomplete](https://github.com/FuzzyAutocomplete/FuzzyAutocompletePlugin) because Cocoa API’s is so verbose. `initRecurrenceWithFrequency:interval:daysOfTheWeek:daysOfTheMonth:monthsOfTheYear:weeksOfTheYear:daysOfTheYear:setPositions` anyone?
+* [FuzzyAutocomplete](https://github.com/FuzzyAutocomplete/FuzzyAutocompletePlugin) because Cocoa API’s is so verbose. `initRecurrenceWithFrequency:interval:daysOfTheWeek:daysOfTheMonth:monthsOfTheYear:weeksOfTheYear:daysOfTheYear:setPositions:end:` anyone?
 * [FXBlurView](https://github.com/nicklockwood/FXBlurView) makes it super easy to have your own blurred views to match iOS 7 and 8’s frosty look.
 * [FrameAccessor](https://github.com/AlexDenisov/FrameAccessor) is perfect for the lazy programmer who would prefer to type `view.width = 50` intead of `CGRect newFrame = view.frame; newFrame.size.width = 50; view.frame = newFrame;`
 * [GBDeviceInfo](https://github.com/lmirosevic/GBDeviceInfo) tells us useful things about the device our app is running on so we can optimize a little for older devices, etc.
