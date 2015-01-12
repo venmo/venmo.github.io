@@ -17,7 +17,7 @@ We open-source a lot of things at Venmo, and we also use a lot of open-source li
 * [CocoaPods](https://github.com/cocoapods/cocoapods) is how we manage all of our dependencies, including private pods. Can’t wait for their 0.36 release which supports Swift!
 * [DAZABTest](https://github.com/dasmer/DAZABTest) provides a super simple API to do basic A/B tests.
 * [Expecta](https://github.com/specta/expecta) is a great matcher framework that makes your tests read like English. `expect(myTests).toNot.beEmpty()`
-* [Facebook](https://github.com/facebook/facebook-ios-sdk) makes it easier our users to sign up and find friends to start using Venmo with.
+* [Facebook-iOS-SDK](https://github.com/facebook/facebook-ios-sdk) makes it easier our users to sign up and find friends to start using Venmo with.
 * [FLEX](https://github.com/Flipboard/FLEX) is built into all of our debug and dogfood builds, and it makes finding and fixing UI bugs so much fun and so much easier.
 * [FuzzyAutocomplete](https://github.com/FuzzyAutocomplete/FuzzyAutocompletePlugin) because Cocoa API’s is so verbose. `initRecurrenceWithFrequency:interval:daysOfTheWeek:daysOfTheMonth:monthsOfTheYear:weeksOfTheYear:daysOfTheYear:setPositions:end:` anyone?
 * [FXBlurView](https://github.com/nicklockwood/FXBlurView) makes it super easy to have your own blurred views to match iOS 7 and 8’s frosty look.
