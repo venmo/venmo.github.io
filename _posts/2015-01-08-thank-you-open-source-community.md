@@ -8,7 +8,7 @@ We open-source a lot of things at Venmo, and we also use a lot of open-source li
 
 * [1PasswordExtension](https://github.com/AgileBits/onepassword-app-extension) adds 1Password support to our login. (Psssst... Look out for it in our next release. ;))
 * [AFNetworking](https://github.com/AFNetworking/AFNetworking) is great for all things networking, but we especially like `UIImageView+AFNetworking` for async image loading.
-* [Alcatraz](https://github.com/supermarin/Alcatraz) is the package manager that brings XVim to Xcode, and that makes me happy.
+* [Alcatraz](https://github.com/supermarin/Alcatraz) is the package manager that brings XVim, FuzzyAutocomplete, GitGutter, etc. to Xcode. Such a must have.
 * [BZGFormViewController](https://github.com/benzguo/BZGFormViewController) is great for simple forms that require validation. We use it in for in our sign up and edit profile views.
 * [BZGMailgunEmailValidation](https://github.com/benzguo/BZGMailgunEmailValidation) is perfect if you use Mailgun for email validation.
 * [BlocksKit](https://github.com/zwaldowski/BlocksKit) because `dismissWithClickedButtonIndex:animated:` delegate methods are no fun at all. Besides, who “clicks” on an iOS device?
@@ -18,9 +18,11 @@ We open-source a lot of things at Venmo, and we also use a lot of open-source li
 * [DAZABTest](https://github.com/dasmer/DAZABTest) provides a super simple API to do basic A/B tests.
 * [Expecta](https://github.com/specta/expecta) is a great matcher framework that makes your tests read like English. `expect(myTests).toNot.beEmpty()`
 * [FLEX](https://github.com/Flipboard/FLEX) is built into all of our debug and dogfood builds, and it makes finding and fixing UI bugs so much fun and so much easier.
+* [FuzzyAutocomplete](https://github.com/FuzzyAutocomplete/FuzzyAutocompletePlugin) because Cocoa API’s is so verbose. `initRecurrenceWithFrequency:interval:daysOfTheWeek:daysOfTheMonth:monthsOfTheYear:weeksOfTheYear:daysOfTheYear:setPositions` anyone?
 * [FXBlurView](https://github.com/nicklockwood/FXBlurView) makes it super easy to have your own blurred views to match iOS 7 and 8’s frosty look.
 * [FrameAccessor](https://github.com/AlexDenisov/FrameAccessor) is perfect for the lazy programmer who would prefer to type `view.width = 50` intead of `CGRect newFrame = view.frame; newFrame.size.width = 50; view.frame = newFrame;`
 * [GBDeviceInfo](https://github.com/lmirosevic/GBDeviceInfo) tells us useful things about the device our app is running on so we can optimize a little for older devices, etc.
+* [GitGutter](https://github.com/allewun/Xcode-GitGutter) shows you what lines were changed, added, and removed right in Xcode’s gutter!
 * [Godzippa](https://github.com/mattt/Godzippa) has been immensely helpful when uploading large amounts of data to our API.
 * [iRate](https://github.com/nicklockwood/iRate) because we love hearing back from our users. <3
 * [JTSImageViewController](https://github.com/jaredsinclair/JTSImageViewController) is what you see when you tap on a picture on a friend’s profile. We love the interaction where you can flick the image off the screen.
