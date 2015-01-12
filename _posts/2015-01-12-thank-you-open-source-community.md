@@ -6,7 +6,7 @@ author: Ayaka Nonaka
 
 We open-source a lot of things at Venmo, and we also use a lot of open-source libraries. To show some appreciation to all of the open-source maintainers and contributors out there, we thought it might be cool to share a list of open-source libraries and tools that the Venmo iOS team relies on. Thank you everyone out there who has contributed to these projects and other projects out there. Here’s to a great 2015!
 
-* [1PasswordExtension](https://github.com/AgileBits/onepassword-app-extension) adds 1Password support to our login. (Psssst... Look out for it in our next release. ;))
+* [1PasswordExtension](https://github.com/AgileBits/onepassword-app-extension) adds 1Password support to our login. (Psssst... Look out for it in our next release!)
 * [AFNetworking](https://github.com/AFNetworking/AFNetworking) is great for all things networking, but we especially like `UIImageView+AFNetworking` for async image loading.
 * [Alcatraz](https://github.com/supermarin/Alcatraz) is the package manager that brings XVim, FuzzyAutocomplete, GitGutter, etc. to Xcode. Such a must have.
 * [BZGFormViewController](https://github.com/benzguo/BZGFormViewController) is great for simple forms that require validation. We use it in our app for our sign up and edit profile views.
@@ -19,7 +19,13 @@ We open-source a lot of things at Venmo, and we also use a lot of open-source li
 * [Expecta](https://github.com/specta/expecta) is a great matcher framework that makes your tests read like English. `expect(myTests).toNot.beEmpty()`
 * [Facebook-iOS-SDK](https://github.com/facebook/facebook-ios-sdk) makes it easier our users to sign up and find friends to start using Venmo with.
 * [FLEX](https://github.com/Flipboard/FLEX) is built into all of our debug and dogfood builds, and it makes finding and fixing UI bugs so much fun and so much easier.
-* [FuzzyAutocomplete](https://github.com/FuzzyAutocomplete/FuzzyAutocompletePlugin) because Cocoa API’s is so verbose. `initRecurrenceWithFrequency:interval:daysOfTheWeek:daysOfTheMonth:monthsOfTheYear:weeksOfTheYear:daysOfTheYear:setPositions:end:` anyone?
+* [FuzzyAutocomplete](https://github.com/FuzzyAutocomplete/FuzzyAutocompletePlugin) because Cocoa API’s is so verbose.
+
+```objc
+initRecurrenceWithFrequency:interval:daysOfTheWeek:daysOfTheMonth:monthsOfTheYear:weeksOfTheYear:daysOfTheYear:setPositions:end:
+```
+anyone?
+
 * [FXBlurView](https://github.com/nicklockwood/FXBlurView) makes it super easy to have your own blurred views to match iOS 7 and 8’s frosty look.
 * [FrameAccessor](https://github.com/AlexDenisov/FrameAccessor) is perfect for the lazy programmer who would prefer to type `view.width = 50` intead of `CGRect newFrame = view.frame; newFrame.size.width = 50; view.frame = newFrame;`
 * [GBDeviceInfo](https://github.com/lmirosevic/GBDeviceInfo) tells us useful things about the device our app is running on so we can optimize a little for older devices, etc.
