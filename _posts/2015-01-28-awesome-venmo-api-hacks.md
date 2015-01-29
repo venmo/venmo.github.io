@@ -17,7 +17,7 @@ Students and families alike love to take road trips across the country. Road tri
 
 Via provides some helpful roadtripping features while also tracking all of your expenses along the way, allowing for easy reimbursements between roadtrippers.
 
-They built Via as a mobile web app, using Ruby on Rails and PostgreSQL for the database. The main API we used was Venmo (for user login, friend lists, and payments), but they also used the Google Maps API, Google Places API, and the MyGasFeed API. The icons are Twitter emoji, but the rest of the graphics they made themselves.
+The team built Via as a mobile web app, using Ruby on Rails and PostgreSQL for the database. The main API used was Venmo (for user login, friend lists, and payments), but they also used the Google Maps API, Google Places API, and the MyGasFeed API. The icons are Twitter emoji, but the rest of the graphics they made themselves.
 
 [Take a look at Via on ChallengePost!](http://challengepost.com/software/via)
 
@@ -25,7 +25,7 @@ They built Via as a mobile web app, using Ruby on Rails and PostgreSQL for the d
 
 Purdue students Vipul Nataraj, Drew Ruberson, Josh Foeh, and Zachary Simpson worked on this fun project for the Pebble watch.
 
-Paybble is an application developed for Boilermake Fall 2014 that allows you to pay people on your contact list directly through your Pebble watch.  In order to use the service, the user has to have the companion iPhone application installed and allow our application access to their Venmo account.  Once these prerequisites are complete, the user can then use the Pebble watch to cycle through their contact list and select a contact to pay as well as an amount.  After confirmation, the application carries out the transaction and even sends both the payer and the payee notifications via text message.  This application is targeted towards people that want to utilize Venmo but are always too lazy to pull out their phones to do it.
+Paybble is an application developed for Boilermake Fall 2014 that allows you to pay people on your contact list directly through your Pebble watch.  In order to use the service, the user has to have the companion iPhone application installed and allow application access to their Venmo account.  Once these prerequisites are complete, the user can then use the Pebble watch to cycle through their contact list and select a contact to pay as well as an amount.  After confirmation, the application carries out the transaction and even sends both the payer and the payee notifications via text message.  This application is targeted towards people that want to utilize Venmo but are always too lazy to pull out their phones to do it.
 
 Gotta love those lazy piles. <3
 
@@ -36,8 +36,6 @@ Q: Why do Aliens always choose functional programming languages as their main de
 A: Because they’re both stateless.
 
 ###SiriKit
-
-Hey Cassidy!
 
 University of Michigan students Janum Trivedi and Noah Shutty built this project for iPhone, and they won the Venmo prize at PennAppsX!
 
